@@ -10,7 +10,7 @@ const Services = () => {
       description: "A sleek personal portfolio built with React and Vite to showcase my work and services.",
       image: portfolio_img,
       tech: ["React", "Vite", "CSS"],
-      live: "https://yourportfolio.vercel.app",
+      live: "https://react-first-task-thwi.vercel.app/",
       github: "https://github.com/yourusername/portfolio",
     },
     {
@@ -18,7 +18,7 @@ const Services = () => {
       description:"A sleek online exam app with timed tests, instant scoring, and a fully responsive design.",
       image: exam_img,
       tech: ["Html", "Javascript", "CSS"],
-      live: "https://yourecommerce.vercel.app",
+      live: "https://examedge-seven.vercel.app/",
       github: "https://github.com/Darkvexor/examedge",
     },
     {
@@ -26,7 +26,7 @@ const Services = () => {
       description: "A responsive 4-step registration form with progress tracking and instant input validation.",
       image: register_img,
       tech: ["React","CSS"],
-      live: "https://yourweatherapp.vercel.app",
+      live: "https://registeration-form-phi.vercel.app/",
       github: "https://github.com/Darkvexor/React-first-task",
     },
   ];
