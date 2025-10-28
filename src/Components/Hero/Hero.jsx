@@ -12,7 +12,7 @@ const Hero = () => {
                 Connect with me
             </div>
             <div className="hero-resume">
-                My Resume
+              My  Resume
             </div>
         </div>
     

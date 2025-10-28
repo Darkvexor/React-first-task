@@ -1,96 +1,181 @@
-.about{
-    display: flex;
+.about {
+  width: 100%;
+  padding: 80px 10%;
+  color: #fff;
+  background-color: #0a0a0a;
+}
+
+.about-title {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.about-title h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  position: relative;
+  display: inline-block;
+}
+
+.about-sections {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 60px;
+  flex-wrap: wrap;
+}
+
+.about-left {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.about-left img {
+  width: 300px;
+  height: 300px;
+  border-radius: 20px;
+  object-fit: cover;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+}
+
+.about-right {
+  flex: 2;
+}
+
+.about-para p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 15px;
+  color: #ddd;
+}
+
+.about-skills {
+  margin-top: 30px;
+}
+
+.about-skill {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 12px 0;
+  width: 100%;
+}
+
+.about-skill p {
+  flex: 1;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #fff;
+}
+
+.about-skill hr {
+  flex: 3;
+  height: 10px;
+  outline: none;
+  border-radius: 10px;
+  background: green;
+  margin-left: 15px;
+  transition: width 0.3s ease;
+}
+
+.about-achievements {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 70px;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.about-achievement {
+  text-align: center;
+}
+
+.about-achievement h1 {
+  font-size: 2.5rem;
+  color: green;
+}
+
+.about-achievement p {
+  color: #ccc;
+  font-size: 0.9rem;
+  margin-top: 5px;
+}
+
+.about-achievements hr {
+  height: 50px;
+  border: none;
+  width: 1px;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+
+@media (max-width: 992px) {
+  .about-sections {
     flex-direction: column;
     align-items: center;
+    text-align: center;
+  }
+
+  .about-left img {
+    width: 250px;
+    height: 250px;
+  }
+
+  .about-right {
+    width: 100%;
+  }
+
+  .about-skill {
     justify-content: center;
-    gap: 80px;
-    margin: 80px 170px;
+  }
+
+  .about-skill hr {
+    flex: 2.5;
+  }
+
+  .about-achievements {
+    flex-direction: row;
+    gap: 30px;
+  }
 }
-.about-title{
-    position: relative;
-}
-.about-title h1{
-    padding: 0px 30px;
-    font-size: 80px;
-    font-weight: 600;
-    color: green;
-}
-.about-sections img{
-    width: 400px;
-    height: 300px;
-}
-.about-sections{
-    display: flex;
-    gap: 80px;
-}
-.about-right{
-    display: flex;
+
+@media (max-width: 600px) {
+  .about {
+    padding: 60px 5%;
+  }
+
+  .about-title h1 {
+    font-size: 2rem;
+  }
+
+  .about-left img {
+    width: 200px;
+    height: 200px;
+  }
+
+  .about-para p {
+    font-size: 0.95rem;
+  }
+
+  .about-skill {
     flex-direction: column;
-    gap: 80px;
-}
-.about-para{
-    display: flex;
-    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .about-skill hr {
+    width: 100%;
+    margin: 5px 0;
+  }
+
+  .about-achievements {
+    flex-direction: row;
     gap: 20px;
-    font-size: 24px;
-    font-weight: 500;
-}
-.about-skills{
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+  }
 
+  .about-achievements hr {
+    display: none;
+  }
 }
-.about-skill{
-    display: flex;
-    gap: 50px;
-    align-items: center;
-    transition: 0.3s;
-}
-.about-skill p{
-    min-width: 150px;
-    font-size: 24px;
-    font-weight: 500;
 
-}
-.about-skill hr{
-   outline: none;
-   border: none;
-   width: 50%;
-   height: 8px;
-   border-radius: 50px;
-   background: green; 
-}
-.about-achievements{
-   display: flex; 
-   width: 100%;
-   justify-content: space-around;
-   margin-bottom: 80px;
-}
-.about-achievement{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-    transition: 0.5s;
-}
-.about-achievement h1{
-    font-size: 60px;
-    font-weight: 700;
-    color: green;
-    
-}
-.about-achievement p{
-    font-size: 22px;
-    font-weight: 500;
-
-}
-.about-skill:hover{
-    transform: scale(1.05);
-    transition: 0.3s;
-
-}
-.about-achievement:hover{
-    transform: scale(1.12);
-    transition: 0.5s;
-}

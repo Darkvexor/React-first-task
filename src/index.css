@@ -9,3 +9,210 @@ body{
   color: white;
   font-family: 'outfit';
 }
+
+/* ========================================
+   📱 UNIVERSAL RESPONSIVENESS
+   Covers all major Chrome Inspect devices
+======================================== */
+
+/* 🖥️ Large Desktops (1440px and above) */
+@media (min-width: 1440px) {
+  body {
+    font-size: 18px;
+  }
+  .container {
+    max-width: 1300px;
+    margin: auto;
+  }
+}
+
+/* 💻 Laptops (1200px – 1439px) */
+@media (max-width: 1439px) {
+  body {
+    font-size: 16px;
+  }
+  .navbar ul {
+    gap: 20px;
+  }
+}
+
+/* 📲 Tablets (992px – 1199px) */
+@media (max-width: 1199px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero,
+  .about-sections,
+  .services-container,
+  .projects-grid,
+  .contact {
+    flex-direction: column;
+    text-align: center;
+    gap: 40px;
+  }
+
+  .hero img {
+    width: 250px;
+  }
+}
+
+/* 📱 Large Phones (768px – 991px) */
+@media (max-width: 991px) {
+  h1 {
+    font-size: 1.8rem;
+  }
+  p {
+    font-size: 0.95rem;
+  }
+
+  .hero h1 {
+    font-size: 1.6rem;
+  }
+
+  .about-skill {
+    flex-direction: row;
+  }
+
+  .project-card {
+    width: 90%;
+    margin: auto;
+  }
+}
+
+/* 📱 Medium Phones (576px – 767px) */
+@media (max-width: 767px) {
+  .navbar {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .navbar ul {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero {
+    padding: 60px 20px;
+  }
+
+  .hero h1 {
+    font-size: 1.4rem;
+  }
+
+  .about-left img {
+    width: 200px;
+  }
+
+  .about-achievements {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .services-container,
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+  }
+}
+
+/* 📱 Small Phones (≤575px) */
+@media (max-width: 575px) {
+  body {
+    font-size: 14px;
+  }
+
+
+  .navbar h2 {
+    font-size: 1.2rem;
+    text-align: center;
+  
+  }
+
+
+  .hero p {
+    font-size: 0.9rem;
+  
+    
+  }
+
+  .about-skill {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .about-skill hr {
+    width: 100%;
+    margin: 5px 0;
+  }
+
+  .project-card {
+    width: 100%;
+  }
+
+  .contact-form button {
+    width: 100%;
+    padding: 12px;
+  }
+
+  .about-achievement {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 10px 0;
+    border-radius: 10px;
+    width: 100%;
+  }
+
+  .about-achievements hr {
+    display: none;
+  }
+  .hero-action {
+    display: flex;
+    width: 70%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    flex-wrap: nowrap; /* keep them on the same line */
+    margin-top: 30px;
+  }
+
+  .hero-connect,
+  .hero-resume {
+    flex: 1 1 45%;
+    text-align: center;
+    padding: 14px 0;
+    border-radius: 10px;
+    color: #fff;
+    font-weight: 600;
+    transition: 0.3s ease;
+  }
+
+}
+
+/* 🌍 Edge Case Devices (like Foldables & iPhone SE landscape) */
+@media (max-width: 400px) {
+  .hero h1 {
+    font-size: 1.1rem;
+  }
+
+  .hero p {
+    font-size: 0.85rem;
+  }
+
+  .navbar ul li {
+    font-size: 0.9rem;
+  }
+
+  .contact h2 {
+    font-size: 1.4rem;
+  }
+
+  .hero-action{
+    
+  }
+}

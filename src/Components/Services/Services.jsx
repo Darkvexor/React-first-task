@@ -1,30 +1,71 @@
-import React from 'react'
+import React from "react";
 import  './Services.css'
-import theme_pattern from '../../assets/theme_pattern.jpg'
+import exam_img from '../../assets/exam_img.png'
+import register_img from '../../assets/register_img.png'
+import portfolio_img from '../../assets/portfolio_img.png'
 const Services = () => {
-  return (
-    <div className='services'>
-        <div className="services-title">
-            <h1>My Services</h1>
-            {/* <img src={theme_pattern} alt="" /> */}
-        </div>
-        <div className="services-container">
-            <div className="card">
-                <h3>Web design</h3>
-                <p> I can build a sleek personal portfolio with React</p>
-            </div>
-            <div className="card">
-                 <h3>E-commerce Dashboard</h3>
-                 <p> "An interactive admin dashboard for managing products, sales, and users with dynamic charts.",</p>
-            </div>
-            <div className="card">
-                <h3>weather App</h3>
-                <p>"A responsive weather app showing real-time weather data using OpenWeather API.",</p>
-            </div>
+  const projectList = [
+    {
+      title: "Portfolio Website",
+      description: "A sleek personal portfolio built with React and Vite to showcase my work and services.",
+      image: portfolio_img,
+      tech: ["React", "Vite", "CSS"],
+      live: "https://yourportfolio.vercel.app",
+      github: "https://github.com/yourusername/portfolio",
+    },
+    {
+      title: "Exam-Site",
+      description:"A sleek online exam app with timed tests, instant scoring, and a fully responsive design.",
+      image: exam_img,
+      tech: ["Html", "Javascript", "CSS"],
+      live: "https://yourecommerce.vercel.app",
+      github: "https://github.com/Darkvexor/examedge",
+    },
+    {
+      title: "Registeration-Form",
+      description: "A responsive 4-step registration form with progress tracking and instant input validation.",
+      image: register_img,
+      tech: ["React","CSS"],
+      live: "https://yourweatherapp.vercel.app",
+      github: "https://github.com/Darkvexor/React-first-task",
+    },
+  ];
 
-        </div>
-    </div>
-  )
-}
+  return (
+    <section className="projects" id="projects">
+      <h2 className="projects-title">Latest Projects</h2>
+      <p className="projects-subtitle">Some of my recent work</p>
+
+      <div className="projects-grid">
+        {projectList.map((project, index) => (
+          <div key={index} className="project-card">
+            <div className="project-image">
+              <img src={project.image} alt={project.title} />
+            </div>
+            <div className="project-info">
+              <h3>{project.title}</h3>
+              <p>{project.description}</p>
+              <ul className="tech-stack">
+                {project.tech.map((t, i) => (
+                  <li key={i}>{t}</li>
+                ))}
+              </ul>
+              <div className="project-links">
+                <a href={project.live} target="_blank" rel="noreferrer">
+                  Live Demo
+                </a>
+                <a href={project.github} target="_blank" rel="noreferrer">
+                  GitHub
+                </a>
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+    </section>
+  );
+};
 
 export default Services
+
+
