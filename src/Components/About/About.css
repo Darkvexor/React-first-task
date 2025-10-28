@@ -57,27 +57,33 @@
 .about-skill {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  gap: 15px; /* gives space between text and bar */
   margin: 12px 0;
   width: 100%;
 }
 
 .about-skill p {
-  flex: 1;
+  flex: 0 0 120px; /* keeps consistent label width */
   font-size: 1rem;
   font-weight: 600;
   color: #fff;
+  text-align: left;
 }
 
 .about-skill hr {
-  flex: 3;
-  height: 10px;
-  outline: none;
+    display: block;        /* block so width% is computed against containing block */
+  box-sizing: border-box;
+  margin: 0;
+  height: 6px;
+  border: none;
+  background: linear-gradient(90deg,#ff4c60,#ff8c00);
   border-radius: 10px;
-  background: green;
-  margin-left: 15px;
-  transition: width 0.3s ease;
+  transition: width 0.4s ease;
+  flex: 0 0 auto;        /* do NOT let flex sizing override the width */
+  width: auto;           /* allow inline style % to apply */
+  min-width: 0; 
 }
+
 
 .about-achievements {
   display: flex;
@@ -131,9 +137,12 @@
     justify-content: center;
   }
 
-  .about-skill hr {
-    flex: 2.5;
+    .about-skill hr {
+
+       width: 100%;
+    margin: 5px 0;
   }
+
 
   .about-achievements {
     flex-direction: row;

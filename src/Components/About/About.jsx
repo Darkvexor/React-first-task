@@ -18,22 +18,22 @@ const About = () => {
                 <p>I’ve had the chance to work with Google, where I led the development of high-impact projects that improved system performance and user experience. Over the years, I’ve honed my skills in building scalable applications, solving complex problems, and collaborating with cross-functional teams to deliver results I’m proud of.</p>
                 <p>I’m passionate about turning ideas into polished interfaces that users love and building designs that make an impact.</p>
             </div>
-            <div className="about-skills">
+             <div className="about-skills">
                 <div className="about-skill">
                     <p>HTML & CSS</p>
-                    <hr style={{width:"50%"}} />
+                    <hr style={{width:"80%"}} />
                 </div>
                    <div className="about-skill">
                     <p>React JS</p>
-                    <hr style={{width:"70%"}} />
+                    <hr style={{width:"40%"}} />
                 </div>
                     <div className="about-skill">
                     <p>Javascript</p>
-                    <hr style={{width:"60%"}} />
+                    <hr style={{width:"70%"}} />
                 </div>
                     <div className="about-skill">
                     <p>Next JS</p>
-                    <hr style={{width:"50%"}} />
+                    <hr style={{width:"40%"}} />
                 </div>
             </div>
         </div>

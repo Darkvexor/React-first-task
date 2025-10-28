@@ -11,7 +11,7 @@ const Services = () => {
       image: portfolio_img,
       tech: ["React", "Vite", "CSS"],
       live: "https://react-first-task-thwi.vercel.app/",
-      github: "https://github.com/yourusername/portfolio",
+      github: "https://github.com/Darkvexor/React-first-task",
     },
     {
       title: "Exam-Site",
@@ -27,7 +27,7 @@ const Services = () => {
       image: register_img,
       tech: ["React","CSS"],
       live: "https://registeration-form-phi.vercel.app/",
-      github: "https://github.com/Darkvexor/React-first-task",
+      github: "https://github.com/Darkvexor/Registeration-Form",
     },
   ];
 
